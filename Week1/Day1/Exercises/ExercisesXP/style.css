@@ -1,0 +1,53 @@
+.yellowbg {
+	background-color:yellow;
+}
+
+.underline {
+	text-decoration: underline;
+	position: relative;
+	left:  40px;
+}
+
+ul {
+	position: relative;
+	left: 30px;
+}
+
+ol {
+	list-style: upper-roman;
+}
+
+.txtcenter {
+	text-align:center;
+}
+
+.img {
+	width: 450px;
+	height:300px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.catimg {
+    border: 7px solid red;
+}
+
+.redtxt {
+	color: red;
+	border: 2px solid red;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+
+
+.lionimg {
+    border: 7px solid orange;
+}
+
+th, td{
+	border: 2px solid black;
+}

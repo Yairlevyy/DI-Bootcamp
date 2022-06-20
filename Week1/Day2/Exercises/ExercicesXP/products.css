@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+}
+
+div {
+	display: inline-block;
+	text-align: center;
+	border: 5px solid black;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 20px;
+	position: relative;
+}
+
+h4 {
+	position: absolute;
+	background-color: #ff4500;
+	color: white;
+	border-radius: 5px;
+	padding: 3px;
+	left: 85px;
+	top: -15px;
+	
+
+}
+
+img {
+	width: 200px;
+	height: 250Px;
+}
+
+h3 {
+	font-family: fantasy;	
+	margin-bottom:  5px;
+}
+
+h6 {
+	font-family: fantasy;
+	font-size: 17px;
+	color: #daa520;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+button {
+	background-color: black;
+	color: white;
+	font-family: fantasy;
+	padding: 7px;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: #daa520;
+}
