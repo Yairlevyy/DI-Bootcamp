@@ -1,0 +1,90 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: arial, sans-serif;;
+}
+
+body {
+	background-image: url("https://img.freepik.com/free-vector/vector-illustration-world-map-mockup-infographics-gray-background_175838-2700.jpg?w=2000");
+	background-size: cover;
+}
+
+header h1 {
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+}
+
+.number {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	margin-bottom:  5rem;
+}
+
+.number h1 {
+	color:  #9966ff;
+}
+
+.number h3 {
+	font-size: 0.2em;
+	margin-top: 1em;
+	color: grey;
+}
+
+.testimonial {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.testimonialone, .testimonialtwo, .testimonialthree {
+	margin:  2rem;
+	width:  15rem;
+}
+
+.testimonial p {
+	text-justify:  center;
+	font-size: 0.6rem;
+	color: grey;
+	background-color: white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 1rem 0.5rem;
+}
+
+.testimonial div div {
+	color: white;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.testimonial .tina {
+	background-color: #ff6666;
+}
+
+.testimonial .tinatwo {
+	background-color: #6600ff;
+}
+
+.testimonial .tinathree {
+	background-color: #00cc99
+ ;
+}
+
+.testimonial div div h1 {
+	font-size: 0.6rem;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 1rem;
+}
+
+.testimonial div div h3 {
+	font-size: 0.5rem;
+	text-align: center;
+	padding-top: 0.1rem;
+	padding-bottom: 1rem;
+	color: lightgrey;
+}
