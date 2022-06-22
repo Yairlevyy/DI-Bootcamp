@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: cursive;
+}
+
+body {
+	background-image: url(gradient.png);
+}
+
+h1 {
+	text-align: center;
+	margin-top: 3.5rem;
+	margin-bottom: 3.5rem;
+	color: white;
+}
+
+section {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
+.inline {
+	display: inline-block;
+}
+
+div div, .employees, .services, .subscribe {
+	margin: 10px;
+}
+
+.submit {
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
+}
+
+label {
+	color: white;
+	font-size: 1rem;
+}
+
+input, select {
+	border: none;
+	border-radius: 5px;
+	height: 2rem;
+}
+
+input {
+	padding: 0.5rem;
+}
+
+select {
+	width: 100%;
+}
+
+
+.submit button {
+	background-color: #3faed6;
+	padding-left:1rem;
+	padding: 0.8rem 1.6rem;
+	border: none;
+	border-radius: 5px;
+	color: white;
+}
