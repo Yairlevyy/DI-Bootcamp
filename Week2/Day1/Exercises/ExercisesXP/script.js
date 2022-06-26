@@ -144,7 +144,7 @@ console.log(`${celsius}°C is ${convertToFahrenheit}°F.`)
 // // Actual: number
 
 // typeof(5.5)
-// // Prediction: number
+// // Prediction: number, because the typeof operator find the data type of a javascript variable.
 // // Actual: number
 
 // typeof(NaN)
@@ -156,7 +156,7 @@ console.log(`${celsius}°C is ${convertToFahrenheit}°F.`)
 // // Actual: string
 
 // typeof(true)
-// // Prediction: boolean
+// // Prediction: boolean, because the typeof operator find the data type of a javascript variable.
 // // Actual: boolean
 
 // typeof(1 != 2)
@@ -221,7 +221,7 @@ console.log(`${celsius}°C is ${convertToFahrenheit}°F.`)
 // // Actual:534
 
 // 5 - "4"
-// // Prediction:1
+// // Prediction:1, because it will take the value inside the " if it's a number and if not it will be display NaN.
 // // Actual:1
 
 // 10 % 5
@@ -245,7 +245,7 @@ console.log(`${celsius}°C is ${convertToFahrenheit}°F.`)
 // // Actual:0
 
 // true + true
-// // Prediction:NaN
+// // Prediction:NaN, because true isn't number.
 // // Actual:2
 
 // true + false
@@ -253,15 +253,15 @@ console.log(`${celsius}°C is ${convertToFahrenheit}°F.`)
 // // Actual:1
 
 // false + true
-// // Prediction:1
+// // Prediction:1, because true value 1 and false 0.
 // // Actual:1
 
 // false - true
-// // Prediction:-1
+// // Prediction:-1, because true value 1 and false 0.
 // // Actual:
 
 // !true
-// // Prediction:undefined
+// // Prediction:undefined, because ! mean not.
 // // Actual:false
 
 // 3 - 4
