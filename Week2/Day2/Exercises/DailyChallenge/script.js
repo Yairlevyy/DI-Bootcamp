@@ -33,11 +33,8 @@ let sentence = "This book is not that bad, i like it."
 let wordNot = sentence.indexOf("not")
 let wordBad = sentence.indexOf("bad")
 
-let sentenceNew = sentence
-  .replace("not", )
-  .replace("that", '')
-  .replace("so", '')
-  .replace("bad","good")
+let sentenceNew = sentence.replace(sentence.substring(wordNot), "good" )
+
 
 if (wordBad > wordNot) {
       console.log(sentenceNew)
