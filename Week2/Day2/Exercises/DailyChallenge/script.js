@@ -35,7 +35,6 @@ let wordBad = sentence.indexOf("bad")
 
 let sentenceNew = sentence.replace(sentence.substring(wordNot), "good" )
 
-
 if (wordBad > wordNot) {
       console.log(sentenceNew)
 } else {
