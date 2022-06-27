@@ -93,3 +93,34 @@ if (users.length == 0) {
 	console.log(`${users[0]}, ${users[1]} and ${usersOnline} are online`)
 }
 
+
+switch (users.length) {
+	case 0: 
+	console.log("no one is online");
+	break;
+	case 1:
+	console.log(`${users} is online`);
+	break;
+	case 2:
+	console.log(`${users[0]}, ${users[1]} is online`);
+	break;
+	default: 
+	console.log(`${users[0]}, ${users[1]} and ${usersOnline} are online`)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
