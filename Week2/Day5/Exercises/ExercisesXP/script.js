@@ -30,32 +30,32 @@
 // Else (ie. he entered a number between 0 and 10), create a variable named computerNumber where the value is a random number between 0 and 10 (Hint: Use the built-in Math.random() function). Make sure that the number is rounded.
 
 
-// function playTheGame() {
+function playTheGame() {
 
-//   let text = "Would you like to play the game?";
-//   if (confirm(text) == false) {
-//     alert("No problem, Goodbye.");
-//   } else {
-//   	let userNumber = prompt("Please enter a number between 0 and 10")
+  let text = "Would you like to play the game?";
+  if (confirm(text) == false) {
+    alert("No problem, Goodbye.");
+  } else {
+  	let userNumber = prompt("Please enter a number between 0 and 10")
 
-//   	if (isNaN(userNumber)) {
-//   		alert("Sorry Not a number, Goodbye")
-//   	} else if (userNumber < 0 || userNumber > 10) {
-//   		alert("“Sorry it’s not a good number, Goodbye”.")
-//   	} else {
-//   		let computerNumber = getRandom(0, 10)
-//   		console.log(computerNumber)
-//   		console.log(userNumber)
-//   	}
-//   }
-// }
+  	if (isNaN(userNumber)) {
+  		alert("Sorry Not a number, Goodbye")
+  	} else if (userNumber < 0 || userNumber > 10) {
+  		alert("“Sorry it’s not a good number, Goodbye”.")
+  	} else {
+  		let computerNumber = getRandom(0, 10)
+  		console.log(computerNumber)
+  		console.log(userNumber)
+  	}
+  }
+}
 
 
-// function getRandom(min, max) {
-//   min = Math.ceil(min);
-//   max = Math.floor(max);
-//   return Math.floor(Math.random() * (max - min +1)) + min;
-// }
+function getRandom(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min +1)) + min;
+}
 
 
 
@@ -97,19 +97,10 @@
 // function path() {
 //     if (userNumber === computerNumber) {
 //     alert("WINNER")
-  
-
-
 //   } else if (userNumber > computerNumber) {
-
 //     bigger()
-
-
 //   } else {
-
-//     smaller()
-
-
+//    smaller()
 //   }
 // }
 
@@ -117,18 +108,11 @@
 // function pathtwo() {
 //     if (userNumber === computerNumber) {
 //     alert("WINNER")
-  
-
-
 //   } else if (userNumber > computerNumber) {
-
 //     bigger()
 //     lastchance()
-
-
 //   } else {
-
-//     smaller()
+//    	smaller()
 //     lastchance()
 //   }
 // }
@@ -146,17 +130,13 @@
 // function compareNumbers(userNumber,computerNumber) {
 	
 //   if (userNumber === computerNumber) {
-// 		return alert("WINNER")
-	
+// 		return alert("WINNER");
 //   } else if (userNumber > computerNumber) {
 //     path()
 //     pathtwo()
-
-
 //   } else {
 //     path()
 //     pathtwo()
-
 //   }
 		 
 // }
