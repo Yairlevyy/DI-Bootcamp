@@ -75,6 +75,7 @@
 // If the user guessed more than 3 times, alert “out of chances” and exit the function.
 
 
+// I DECOMPOSED EACH ACTION TO A SMALL FUNCTION TO HAVE A MORE CLEAR CODE //
 
 // function win() {
 //   alert("WINNER")
