@@ -187,6 +187,42 @@
 
 
 
+// CORRECTION BY ZIV
+
+// let shoppingList = ['banana','apple','orange'];
+
+// function isInStock(item){
+//   if(stock[item] && stock[item]>0){
+//     return true;
+//   }
+//   return false;
+// }
+
+// function itemPrice(item) {
+//   return prices[item];
+// }
+
+// function updateStock(item){
+//   stock[item]--;
+// }
+
+// function myBill(){
+//   let sum = 0
+//   for (var i = 0; i < shoppingList.length; i++) {
+//     let item = shoppingList[i];
+//     if(isInStock(item)){
+//       console.log(item, itemPrice(item));
+//       updateStock(item);
+//       sum += itemPrice(item)
+//     }
+//   }
+//   return sum;
+// }
+// console.log(myBill())
+
+// console.log(stock);
+
+
 // Exercise 5 : What’s In My Wallet ?
 // Instructions
 // Note: Read the illustration (point 4), while reading the instructions
@@ -276,24 +312,54 @@
 // }
 
 
+// function planeRideCost() {
+
+// let correct = false;
+
+// do {
+//   let question = prompt("In wich destination?").toLowerCase();
+//   if (isNaN(question)) {
+//     if (question === "london") {
+//     	return 183;
+//     } else if (question === "paris") {
+//     	return 220
+//     } else {
+//     	return 300
+//     }
+//   }
+// } while (!correct);
+// }
+
+
 // function rentalCarCost() {
 
 // let correct = false;
 
 // do {
-//   let question = prompt("In wich destination?");
-//   if (typeof question === "string") {
-//     return 140
-//     correct = true;
-//     break;
+//   let question = prompt("How many days do you want to rent the car?");
+//   if (!isNaN(question)) {
+    
+//   	if (question < 10 ) {
+//   		return question*40
+//     	correct = true;
+//     	break;
+//   	} else {
+//   		return question*38
+//     	correct = true;
+//     	break;
+//   	}
+
+ 
 //   }
 // } while (!correct);
+
 // }
 
-// console.log(rentalCarCost());
+// function totalVacationCost() {
+	
+// 	console.log(`The hotel cost is ${hotelCost()}, The plane tickets cost is ${planeRideCost()}, The car cost is ${rentalCarCost()}.`)
 
-// IN PROGRESS
+// }
 
-// function totalVacationCost()
+// totalVacationCost()
 
-// console.log(totalVacationCost())
