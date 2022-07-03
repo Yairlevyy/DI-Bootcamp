@@ -20,12 +20,12 @@
 // Bonus: If the background color of the div is “light blue”, alert “Hello x and y” (x and y are the users in the div).
 
 
-// let divUsers = document.getElementsByTagName('div');
+// let divUsers = document.getElementsByTagName('div')[0];
 
 // divUsers.style.backgroundColor='lightblue';
 // divUsers.style.padding = '5px';
 
-// let ul = document.getElementsByTagName('ul');
+// let ul = document.getElementsByTagName('ul')[0];
 // let john = ul.firstElementChild;
 // let pete = ul.lastElementChild;
 

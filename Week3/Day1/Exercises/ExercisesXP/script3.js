@@ -21,7 +21,7 @@
 // Append the text node to the newly created list node (<li>).
 // Finally, append this updated list node to the unordered list (<ul>), using the appendChild method.
 
-// let div = document.getElementsByTagName('div');
+// let div = document.getElementsByTagName('div')[0];
 
 // div.setAttribute('id', 'socialNetworkNavigation');
 
@@ -29,6 +29,6 @@
 // let newText = document.createTextNode('Logout');
 // newLi.appendChild(newText);
 
-// let ul = document.getElementsByTagName('ul');
+// let ul = document.getElementsByTagName('ul')[0];
 // ul.appendChild(newLi)
 
