@@ -16,26 +16,20 @@
 // Should you still use an array for the planets ? 
 // Or an array of objects ?]
 
-let SolarSystem = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+let solarSystem = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+
+let solarSystemColors = ["Grey", "Brown", "Blue", "Red", "Orange", "Gold", "Lightblue", "darkblue"];
+
+let section = document.getElementsByTagName('section')[0];
 
 for (let i = 0; i < solarSystem.length; i++) {
-	let solarSystem[i] = document.createElement(div);
-	solarSystem[i].classList.add('planet', solarSystem[i]);
-}
-
-let SolarSystemColors = ["Grey", "Brown", "Blue", "Red", "Orange", "Gold", "Lightblue", "darkblue"];
-
-for (let i = 0; i < solarSystem.length; i++) {
-	div.solarSystem[i].style.backgroundColor = SolarSystemColors[i];
+	let planetDiv = document.createElement('div');
+	planetDiv.classList.add('planet', solarSystem[i]);
+	planetDiv.style.backgroundColor = solarSystemColors[i];
+	section.appendChild(planetDiv);
 }
 
 
-let section = document.getElementsByTagName('section');
-
-
-for (let i = 0; i < solarSystem.length; i++) {
-	section.appendChild(solarSystem[i]);
-}
 
 
 
