@@ -67,6 +67,76 @@
 
 
 
+// 🌟 Exercise 2 : Work With Forms
+// Instructions
+// Copy the code below, into a structured HTML file:
+
+// <form>
+//   <label for="fname">First name:</label><br>
+//   <input type="text" id="fname" name="fname"><br>
+//   <label for="lname">Last name:</label><br>
+//   <input type="text" id="lname" name="lname"><br><br>
+//   <input type="submit" value="Submit" id="submit">
+// </form> 
+// <ul class="usersAnswer"></ul>
+
+
+// Retrieve the form and console.log it.
+
+// Retrieve the inputs by their id and console.log them.
+
+// Retrieve the inputs by their name attribute and console.log them.
+
+// When the user submits the form (ie. submit event listener)
+// use event.preventDefault(), why ?
+// get the values of the input tags,
+// make sure that they are not empty, #ADD ON THE HTML FILE REQUIRED INSIDE THE TAG.
+// create an li per input value,
+// then append them to a the <ul class="usersAnswer"></ul>, below the form.
+// The output should be :
+
+// <ul class="usersAnswer">
+//     <li>first name of the user</li>
+//     <li>last name of the user</li>
+// </ul>
+
+// let form = document.forms[0];
+
+// console.log(form);
+
+// let firstName = form.elements.fname;
+
+// console.log(firstName);
+
+// let lastName = form.elements.lname;
+
+// console.log(lastName);
+
+// // let firstByName = document.getElementsByName('fname')[0];
+
+// // console.log(firstByName);
+
+// // let lastByName = document.getElementsByName('lname')[0];
+
+// // console.log(laststByName);
+
+// form.addEventListener('submit', addToList)
+
+// function addToList() {
+// 	event.preventDefault(); //To prevent from submitting the form.
+// 	let value = [form.elements.fname.value, form.elements.lname.value]
+// 	let ul = document.getElementsByClassName("usersAnswer")[0];
+// 	for (let i = 0; i < value.length; i++) {
+// 		let li = document.createElement("li")
+// 		let text = document.createTextNode(value[i]);
+// 		li.appendChild(text);
+// 		ul.appendChild(li)
+// 	}
+// }
+
+
+
+
 // 🌟 Exercise 3 : Transform The Sentence
 // Instructions
 // Add this sentence to your HTML file then follow the steps :
@@ -89,7 +159,82 @@
 // 5. Call the function highlight() onmouseover (ie. when the mouse pointer is moved onto the paragraph), and the function return_normal() onmouseout (ie. when the mouse pointer is moved out of the paragraph). Look at this example
 
 
-// ****************************************
+// let allBoldItems;
+
+// function getBold_items() {
+// 	allBoldItems = document.getElementsByTagName('strong');
+// }
+
+// function highlight() {
+// 	for (item of allBoldItems) {
+// 		item.style.color = "blue";
+// 	}
+// }
+
+// function return_normal() {
+// 	for (item of allBoldItems) {
+// 		item.style.color = "black";
+// 	}
+// }
+
+// getBold_items();
+// Array.from(allBoldItems)
+
+// for (item of allBoldItems) {
+// 	item.addEventListener('mouseover', highlight);
+// 	item.addEventListener('mouseout', return_normal);
+// }
+
+
+
+
+// 🌟 Exercice 4 : Volume Of A Sphere
+// Instructions
+// Write a JavaScript program to calculate the volume of a sphere. Use the code below as a base:
+// <!doctype html> 
+// <html lang="en"> 
+//     <head> 
+//         <meta charset="utf-8"> 
+//         <title>Volume of a Sphere</title> 
+//         <style>  
+//             body {
+//                 padding-top:30px;
+//             } 
+
+//             label,input {
+//                 display:block;
+//             }  
+//         </style> 
+//     </head> 
+//     <body> 
+//         <p>Input radius value and get the volume of a sphere.</p> 
+//         <form  id="MyForm"> 
+//             <label for="radius">Radius</label><input type="text" name="radius" id="radius" required> 
+//             <label for="volume">Volume</label><input type="text" name="volume" id="volume"> 
+//             <input type="submit" value="Calculate" id="submit">    
+//         </form> 
+//     </body> 
+// </html> 
+
+// let form = document.forms[0];
+
+// form.addEventListener("submit", calculate);
+
+// let radiusValue = form.elements.radius.value;
+
+
+// let volumeValue = form.elements.volume.value;
+
+// function calculate() {
+// 	event.preventDefault();
+// 	let radiusValue = form.elements.radius.value;
+// 	console.log(radiusValue);
+// 	let volumeValue = form.elements.volume.value;
+// 	let CalcVolumeValue = (radiusValue*radiusValue*radiusValue)*(4/3)*3.14;
+// 	console.log(CalcVolumeValue);
+// }
+
+
 
 
 // Exercise 5 : Event Listeners
