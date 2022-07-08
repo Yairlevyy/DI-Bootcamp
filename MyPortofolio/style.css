@@ -14,12 +14,16 @@ body {
 	background-repeat: no-repeat;
 }
 
+body:hover {
+	cursor: pointer;
+}
+
 header {
 	margin: 1rem;
 	border-radius: 5px;
 	padding: 1rem;
-/*	position:sticky;
-	top: 1rem;*/
+	position:sticky;
+	top: 1rem;
 	/*background-color: #0093E9;
 	background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);*/
 	color: white;
@@ -54,12 +58,16 @@ nav h1 {
 	font-size: 3.5rem;
 }
 
+nav h1:hover {
+	cursor:  pointer;
+}
+
 /*main {
 	height:100vh;
 }*/
 
 .home {
-	margin-bottom: 6.5rem;
+	margin-bottom: 7.2rem;
 }
 
 .home h1 {
@@ -78,10 +86,19 @@ nav h1 {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: flex-start;
-	margin-top: 6rem;
-	margin-bottom:8rem;
+	margin-top: 8rem;
+	margin-bottom:6rem;
 	padding: 5rem;
+	padding-top: 10rem;
 	color: white;
+}
+
+.frontend, .backend, .database {
+	transition: all 0.5s ease;
+}
+
+.frontend:hover, .backend:hover, .database:hover {
+	transform: scale(1.1);
 }
 
 .skills h3 {
@@ -109,15 +126,15 @@ nav h1 {
 .works {
 	display: flex;
 	justify-content:space-evenly;
-	padding-top: 10rem;
+	padding-top: 12rem;
 	padding-bottom:10rem;
 
 
 }
 
 .works img {
-	width:25rem;
-	height:15rem;
+	width:23rem;
+	height:13rem;
 }
 
 .works .project h3 {
@@ -134,19 +151,20 @@ nav h1 {
 	text-decoration: none;
 }
 
-.project {
+/*.project {
 	transition: all 0.5s ease;
 }
 
 .project:hover {
 	transform:  scale(1.1)
-}
+}*/
 
 .contact {
 	display: flex;
 	justify-content:center;
 	align-items:center;
-	margin-bottom: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .contact label {
@@ -163,6 +181,8 @@ nav h1 {
 	width: 25rem;
 	height: 2.5rem;
 	border: none;
+	padding-right: 1rem;
+	padding-left: 1rem;
 }
 
 .contact div {
@@ -179,3 +199,134 @@ nav h1 {
 	background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 
 }
+
+@media screen and (max-width: 1200px) {
+	
+	.works {
+		display: flex;
+		flex-direction: column;
+		justify-content:space-between;
+		align-items: flex-start;
+		padding-top: 12rem;
+		padding-bottom:10rem;
+	}
+
+	.skills {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 8rem;
+		margin-bottom:6rem;
+		padding: 5rem;
+		padding-top: 10rem;
+		color: white;
+	}
+
+	.project {
+		margin: 2.5rem;
+	}
+
+	.works .project h3 {
+		width: 23rem;
+	}
+
+	.works img {
+		width:32rem;
+		height:20rem;
+	}
+
+	.contact {
+		margin-bottom:  6rem;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	
+	.skills {
+		display: flex;
+		flex-direction: column;
+		justify-content:space-between;
+		align-items: center;
+	}
+
+	.frontend, .backend, .database {
+		margin-bottom: 3rem;
+		width: 30rem;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	nav {
+		display:  flex;
+		flex-direction: column;
+	}
+
+	.menulinks {
+		margin-top: 1rem;
+	}
+
+	.skills {
+		padding-top: 12rem;
+	}
+
+	.contact {
+		padding-top: 12rem;
+	}
+}
+
+@media screen and (max-width: 599px) {
+
+	.frontend, .backend, .database {
+		margin-bottom: 3rem;
+		width: 70vw;
+	}
+
+	.project {
+		margin: 1.5rem;
+	}
+
+	.works img {
+		width:80vw;
+		height:30vh;
+		/*margin-left: 2vw;*/
+	}
+	
+	.works .project h3 {
+		width: 80vw;
+	/*	margin-left: 2vw;*/
+	}
+
+	.contact input,select {
+		width: 85vw;
+		height: 2.5rem;
+		border: none;
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+
+	.home h1 {
+		color:white;
+		font-size: 2rem;
+		margin-left: 5rem;
+		margin-top: 4.5rem;
+	}
+
+	.menulinks {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact {
+		margin-left: 3vh;
+		
+
+	}
+
+
+
+}
+
+
+
