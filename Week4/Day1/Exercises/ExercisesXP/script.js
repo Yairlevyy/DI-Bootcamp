@@ -79,9 +79,10 @@ Create a variable called experiencePoints.
 Assign to this variable, a ternary operator. If winBattle() is true, the experiencePoints variable should be equal to 10, else the variable should be equal to 1.
 Console.log the experiencePoints variable.
 
-const winBattle = () => {
-    let experiencePoints = winBattle() === true ? 10 : 1;
-}
+const winBattle = () => return true;
+
+let experiencePoints = winBattle() === true ? 10 : 1;
+
 
 
 
