@@ -1,68 +1,68 @@
-// 🌟 Exercise 1 : Scope
-// Instructions
-// Analyse the code below, and predict what will be the value of a in all the following functions.
-// Write your prediction as comments in a js file.
-// // #1
-// function q1() {
-//     var a = 5;
-//     if(a > 1) {
-//         a = 3;
-//     }
-//     alert(a);
-// }
+🌟 Exercise 1 : Scope
+Instructions
+Analyse the code below, and predict what will be the value of a in all the following functions.
+Write your prediction as comments in a js file.
+// #1
+function q1() {
+    var a = 5;
+    if(a > 1) {
+        a = 3;
+    }
+    alert(a);
+}
 
 
-// // run in the console: 
-// // q1() : 3
+// run in the console: 
+// q1() : 3
 
-// //#2
-// var a = 0;
-// function q2() {
-//     a = 5;
-// }
+//#2
+var a = 0;
+function q2() {
+    a = 5;
+}
 
-// function q22() {
-//     alert(a);
-// }
-
-
-// // run in the console:
-// // q22() : 0
-// // q2()
-// // q22() : 5
-
-// //#3
-// function q3() {
-//     window.a = "hello";
-// }
+function q22() {
+    alert(a);
+}
 
 
-// function q32() {
-//     alert(a);
-// }
+// run in the console:
+// q22() : 0
+// q2()
+// q22() : 5
 
-// // run in the console:
-// q3() : 
-// // q32() : undefined
-
-// //#4
-// var a = 1;
-// function q4() {
-//     var a = "test";
-//     alert(a);
-// }
+//#3
+function q3() {
+    window.a = "hello";
+}
 
 
-// // run in the console:
-// q4() : "test"
+function q32() {
+    alert(a);
+}
 
-// //#5
-// var a = 2;
-// if (true) {
-//     var a = 5;
-//     alert(a);
-// }
-// // alert(a): 5
+// run in the console:
+q3() : 
+// q32() : undefined
+
+//#4
+var a = 1;
+function q4() {
+    var a = "test";
+    alert(a);
+}
+
+
+// run in the console:
+q4() : "test"
+
+//#5
+var a = 2;
+if (true) {
+    var a = 5;
+    alert(a);
+}
+// alert(a): 5
 
 
 
@@ -105,29 +105,37 @@ const checkType = (arg) => {
 
 
 
-// 🌟 Exercise 4 : Colors
-// Instructions
-// Using this array :
-
-// // let colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
-// Write a JavaScript program that displays the colors in the following order : “1# choice is Blue.” “2# choice is Green.” “3# choice is Red.” ect…
-// Check if at least one element of the array is equal to the value “Violet”. If yes, console.log("Yeah"), else console.log("No...")
-// Hint : Use the array methods taught in class. Look at the lesson Array Methods.
+🌟 Exercise 4 : Colors
+Instructions
+Using this array :
 
 // let colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+Write a JavaScript program that displays the colors in the following order : “1# choice is Blue.” “2# choice is Green.” “3# choice is Red.” ect…
+Check if at least one element of the array is equal to the value “Violet”. If yes, console.log("Yeah"), else console.log("No...")
+Hint : Use the array methods taught in class. Look at the lesson Array Methods.
 
-// const displaySentence = () => {
-//     for (i = 0; i < colors.length; i++) {
-//     let sentence = `${i+1}# choice is ${colors[i]}`
-//     console.log(sentence);
-// }
+let colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
 
-// displaySentence();
+const displaySentence = () => {
+    for (i = 0; i < colors.length; i++) {
+    let sentence = `${i+1}# choice is ${colors[i]}`
+    console.log(sentence);
+}
+
+displaySentence();
+
+colors.forEach((color, i) => {
+    let sentence = `${i+1}# choice is ${color}`
+    console.log(sentence);
+});
 
 
-// const checkViolet = () => {
-//  let violet = colors.some(e => e = "Violet") === true ? console.log("Yeah") : console.log("No...");
-// } 
+const checkViolet = () => {
+ let violet = colors.some((color) => {return (color = "Violet")}) === true ? console.log("Yeah") : console.log("No...");
+} 
 
-// checkViolet();
+checkViolet();
+
+
+
 
