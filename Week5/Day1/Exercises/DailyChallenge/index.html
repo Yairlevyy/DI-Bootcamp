@@ -39,8 +39,13 @@ function toJson(event) {
 
 	let p = document.createElement("p");
 	let text = document.createTextNode(`"{"name":"${name}","lastname":"${lastName}"}"`);
+
+	// let obj = {name: name, lastname: lastname};
+	// let toJson = JSON.stringify(obj);
+	// let text = document.createTextNode(toJson);
+
 	div.appendChild(p);
-	p.appendChild(text);
+	p.appendChild(text)
 
 }
 
