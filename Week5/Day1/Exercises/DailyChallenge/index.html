@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DailyChallenge</title>
+	<style type="text/css">
+		
+		input, button {
+			display: inline-block;
+		}
+
+	</style>
+</head>
+<body>
+
+<form action="index.html" method="POST" id="form">
+	
+<input type="text" name="name" id="name">
+<input type="text" name="lastname" id="lastname">
+<button type="submit">Send</button>
+
+
+</form>
+
+<div id="div"></div>
+
+
+<script type="text/javascript">
+	
+let form = document.getElementsByTagName('form')[0];
+form.addEventListener("submit", toJson)
+
+function toJson(event) {
+	event.preventDefault();
+	let name = form.name.value;
+	let lastName = form.lastname.value;
+	let div = document.getElementById("div");
+
+	let p = document.createElement("p");
+	let text = document.createTextNode(`"{"name":"${name}","lastname":"${lastName}"}"`);
+	div.appendChild(p);
+	p.appendChild(text);
+
+}
+
+</script>
+</body>
+</html>
