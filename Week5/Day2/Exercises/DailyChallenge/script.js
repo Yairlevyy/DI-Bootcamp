@@ -1,6 +1,8 @@
 let form = document.getElementsByTagName("form")[0];
 
-form.addEventListener("submit", generate)
+let button = document.getElementById("button")
+
+button.addEventListener("click", generate)
 
 function generate() {
 	event.preventDefault();
@@ -23,18 +25,14 @@ function generate() {
 			p.appendChild(text);
 			div.appendChild(p)
 		} else {
-			display = () => {
-
 				let object = xhr.response;
 				let img = document.createElement("img");
-				img.src = object["data"][0]["images"]["480w_still"];
-				img.setAttribute("id", `${value}`)
+				img.src = object["data"][0]["images"]["480w_still"]["url"];
 				let button = document.createElement("button");
-				button.textContent = "Delete";
-				button.addEventListener("click", () => img.value.style.display = "none");
+				button.textContent = "Delete all";
+				button.addEventListener("click", () => img.style.display = "none");
 				div.appendChild(img);
 				div.appendChild(button)
-			}
 		}
 	}
 
