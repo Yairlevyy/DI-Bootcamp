@@ -39,6 +39,3 @@ xhrsun.onload = function() {
 		console.log(xhrsun.response)
 	}
 }
-
-
-xhrSun.open("GET", "")
