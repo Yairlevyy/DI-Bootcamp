@@ -6,17 +6,16 @@ let div = document.getElementById("div");
 async function retrieveCharacter() {
 
 	deleteAll();
-	// displayLoading();
 
 	let randomNum = Math.floor(Math.random() * (83 - 1 + 1) + 1);
 	
 	try {
 		const result = await fetch(`https://www.swapi.tech/api/people/${randomNum}`)
-		// removeLoading();
-		
+
 		if (result.status !== 200) {
 			throw new Error ("Oh No! That person isn't available.")
 		} else {
+			// removeLoading();
 			const response = await result.json();
 			displayName(response);
 			displayData(response);
@@ -34,6 +33,7 @@ async function retrieveCharacter() {
 }
 
 function deleteAll() {
+	// displayLoading()
 	Array.prototype.slice.call(document.getElementsByTagName('h2')).forEach(
 		function(item) {
 			item.remove();
