@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Currency converter</title>
+
+	<style type="text/css">
+		
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			display: flex;
+			justify-content: safe center;
+			text-align: center;
+			background-image: url("https://static.vecteezy.com/system/resources/previews/005/368/108/original/modern-background-technology-cable-blue-banners-background-can-use-for-background-on-website-or-mobile-apps-vector.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			padding-top: 2em;
+
+		}
+
+		form div {
+			margin: 1em;
+		}
+
+		h1, form label {
+			font-family: fantasy;
+			color: white;
+		}
+
+		#button {
+			background-color: #0093E9;
+			background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+			border: none;
+			padding: 0.5em;
+			font-size: 1.2em;
+			border-radius: 5px;
+			font-family: fantasy;
+			width: 20vw;
+			text-align: center;
+
+		}
+
+		#amountCon {
+			color: white;
+			background-color: #0093E9;
+			background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+			display: inline-block;
+			padding: 0.3em;
+			padding-left: 1em;
+			padding-right: 1em;
+			font-family: fantasy;
+			border-radius: 5px;
+			/*width: 30vw;*/
+			font-size: 1.5em;
+			margin: 2em;
+		}
+
+		form input, form select {
+			width: 30vw;
+			height: 2.5em;
+			border-radius: none;
+
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="container">
+
+<h1>Currency Converter</h1>
+
+
+<form id="form">
+<div><label for="from">From:</label></div>
+
+<div><select name="from" id="from">
+
+</select></div>
+
+
+<div><label for="to">To:</label></div>
+
+<div><select name="to" id="to">
+
+</select></div>
+
+
+<div><label for="amount">Amount:</label></div>
+
+<div><input type="number" name="amount" id="amount"></div>
+
+
+<div><button type="submit" id="button">CONVERT</button></div>
+</form>
+
+<div id="amountCon"></div>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
