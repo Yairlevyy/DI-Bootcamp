@@ -15,7 +15,7 @@ async function retrieveCharacter() {
 		if (result.status !== 200) {
 			throw new Error ("Oh No! That person isn't available.")
 		} else {
-			// removeLoading();
+			removeLoading();
 			const response = await result.json();
 			displayName(response);
 			displayData(response);
@@ -33,7 +33,6 @@ async function retrieveCharacter() {
 }
 
 function deleteAll() {
-	// displayLoading()
 	Array.prototype.slice.call(document.getElementsByTagName('h2')).forEach(
 		function(item) {
 			item.remove();
@@ -43,6 +42,7 @@ function deleteAll() {
 		function(item) {
 			item.remove();
 		})
+	displayLoading();
 }
 
 function displayLoading() {
