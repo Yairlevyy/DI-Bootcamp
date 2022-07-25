@@ -18,17 +18,19 @@ SELECT * FROM film ORDER BY rental_rate ASC LIMIT 10;
 
 SELECT * FROM film ORDER BY rental_rate ASC LIMIT 20;
 
-SELECT amount, payment_date, customer_id
+SELECT amount, payment_date
 FROM payment
 INNER JOIN customer
-ON customer_id = customer_id;
+ON payment.customer_id = customer.customer_id;
 
 ***12***
+
+***13***
 
 SELECT city, country
 FROM city
 INNER JOIN country
-ON country_id = country_id;
+ON city.country_id = country.country_id;
 
 
 
