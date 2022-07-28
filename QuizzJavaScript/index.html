@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz</title>
+	<style type="text/css">
+		* {
+			color: black;
+		}
+	</style>
+</head>
+<body>
+
+<button id="button"></button>
+<div id="div"></div>
+
+
+<script type="text/javascript">
+	
+const addPar = () => {
+	let div = document.getElementById("div");
+	let p = document.createElement("p");
+	let text = document.createTextNode("New Paragraph");
+	p.appendChild(text)
+	div.appendChild(p)
+}
+
+let button = document.getElementById("button");
+button.addEventListener("click", addPar);
+
+let par = document.getElementsByTagName("p");
+
+for(let i = 0; i < par.length; i++) {
+  par[i].addEventListener("mouseover", function(event) {
+    event.target.style.color = "red";
+  })
+}
+
+
+</script>
+</body>
+</html>
