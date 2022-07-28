@@ -306,11 +306,17 @@ console :
     2. Make sure to use try and catch
 
 async function displayCatFact() {
-
-    const response = await fetch('https://catfact.ninja/fact');
-    let data = await response.json();
-    let factCat = data.fact;
-    console.log(`Fact about Cat: ${factCat}`)
-
+    try {
+        const response = await fetch('https://catfact.ninja/fact');
+            if (response.status != 200) {
+            throw new Error ("Error")
+            } else {
+                let data = await response.json();
+                let factCat = data.fact;
+                console.log(`Fact about Cat: ${factCat}`)
+            }
+    } catch(errror) {
+        console.log(error)
+    }
 }
 
