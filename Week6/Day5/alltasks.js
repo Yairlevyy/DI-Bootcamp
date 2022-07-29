@@ -40,7 +40,9 @@ for (let task of tasks) {
 	div.appendChild(deleteBtn);
 	deleteBtn.addEventListener("click", (event) => {
 		// storage.removeItem(tasks[tasks.indexOf(task)]);
-		event.target.parentElement.remove()
+		if (confirm("are you sure to delete this task?")) {
+   			 event.target.parentElement.remove()
+  		}
 	});
 
 	// let editBtn = document.createElement("button");
